@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: rgb(31, 31, 31);
+    font-family: 'Nerko One', cursive;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    font-weight: 400;
+}
