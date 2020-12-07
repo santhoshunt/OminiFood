@@ -6,9 +6,59 @@
 
 html {
     background-color: #fff;
-    color: rgb(31, 31, 31);
-    font-family: 'Nerko One', cursive;
+    color: rgb(27, 27, 27);
+    font-family: 'Yeon Sung', cursive;
+    /*font-family: 'Nerko One', cursive;*/
     text-rendering: optimizeLegibility;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.699)), url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    width: 1140;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    padding-top: 0;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 240%;
+    margin: 0;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 5;
+}
+
+.btn:link, .btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 200px;
+    color: #fff;
+}
+
+.btn-hungry:link, .btn-hungry:visited {
+    color: black;
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+}
+
+.btn-more:link, .btn:visited {
+    border: 1px solid #e67e22;
 }
