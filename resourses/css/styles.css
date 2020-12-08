@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*variales(colors)*/
+:root{
+    --lightOrange:#e67e22;
+    --darkOrange:#bf6516;
+}
 
 html {
     background-color: #fff;
@@ -13,12 +18,13 @@ html {
     font-size: 20px;
     font-weight: 300;
 }
+/*row*/
 
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
-
+/*header*/
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.699)), url('images/hero.jpg');
     background-size: cover;
@@ -44,7 +50,44 @@ h1 {
     text-transform: uppercase;
     font-weight: 5;
 }
+/*Logo*/
+.logo{
+    margin-top:15px;
+    height: 100px;
+    width:auto;
+    float:left;
+}
+/*main navigation bar*/
+.main-nav{
+    float:right;
+    list-style:none;
+}
 
+.main-nav li{
+    
+    display:inline-block;
+    margin-left: 20px;
+    margin-top:5%;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding:5px 0;
+    color:white;
+    text-transform: uppercase;
+    text-decoration:none;
+    border-bottom:white 2px solid transparent;
+    
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    color:var(--lightOrange);
+    border-bottom:2px var(--darkOrange) solid;
+    transition:border-bottom 0.2s,color 0.25s;
+
+}
+
+/*Buttons*/
 .btn:link, .btn:visited {
     display: inline-block;
     text-decoration: none;
@@ -53,12 +96,18 @@ h1 {
     color: #fff;
 }
 
-.btn-hungry:link, .btn-hungry:visited {
+.btn-full:link, .btn-full:visited {
     color: black;
     border: 1px solid #e67e22;
     background-color: #e67e22;
 }
 
-.btn-more:link, .btn:visited {
+.btn-ghost:link, .btn:visited {
     border: 1px solid #e67e22;
+}
+.btn:hover,
+.btn:active{
+    background-color:#bf6516;
+    border:1px solid #bf6516;
+    transition: background-color 0.2s,border 0.2s;
 }
