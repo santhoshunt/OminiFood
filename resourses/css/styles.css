@@ -170,24 +170,38 @@ h2:after {
 /*section 2*/
 .section-meals{
     padding:0;
+    margin:0;
 }
 .meals-showcase {
     list-style: none;
     width: 100%;
+    padding:0;
+    margin:0;
 }
-
+.meals-showcase figure{
+    margin:0;
+    padding:0;
+    border-bottom:0;
+}
 .meals-showcase li {
-    display: block;
+    display: flex;
     width: 25%;
     float: left;
 }
-
 .meal {
     width: 100%;
-    margin: 0;
+    object-fit: cover;
+    overflow:hidden;
+    background-color:#000;
 }
 .meal img{
-    object-fit: cover;
+    
+    opacity:0.75;
     width: 100%;
-    margin: 0;
+    transform:scale(1.35);
+    transition: transform 0.5s;
+}
+.meal img:hover{
+    opacity:1;
+    transform:scale(1.04);
 }
